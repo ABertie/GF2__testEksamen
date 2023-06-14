@@ -1,0 +1,16 @@
+:root{
+    --color-dark: #3B4C5C;
+    --color-darker: #2A343F;
+    --color-darkest: #262F38;
+    --color-lightest: #FFFFFF;
+    --color-lighter: #F3F4F6;
+    --color-light: #D7DBDE; 
+    --brand-blue: #75D1FF;
+    --brand-green: #8BCE7B;
+    --brand-yellow: #FFD600;
+    --brand-red: #E74C3C;
+
+    --shadow-light: #d7dbde70;
+
+    --font: 'Open Sans', sans-serif;
+}
