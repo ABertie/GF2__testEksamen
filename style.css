@@ -1,8 +1,10 @@
+@import url("./asset/css/carosel.css");
+
 :root{
     --color-dark: #3B4C5C;
     --color-darker: #2A343F;
     --color-darkest: #262F38;
-    --color-lightest: #FFFFFF;
+    --color-lightest: #FEFEFE;
     --color-lighter: #F3F4F6;
     --color-light: #D7DBDE; 
     --brand-blue: #75D1FF;
@@ -11,6 +13,84 @@
     --brand-red: #E74C3C;
 
     --shadow-light: #d7dbde70;
+}
 
-    --font: 'Open Sans', sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    --text-color: var(--color-dark);
+    --computer-padding: 6em;
+
+    color: var(--text-color);
+    font-family: 'Open Sans', sans-serif;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+h1{
+    font-size: 1.7em;
+    font-weight: 500;
+
+    margin-bottom: 1.5rem;
+}
+.SpanHeader{
+    display: flex;
+    flex-direction: column;
+}
+
+p, button{
+    font-size: 1.3em;
+}
+p+p{
+    font-size: 1em;
+    margin-top: 1em;
+}
+
+button{
+    margin-top: 3em;
+    background: none;
+    border: none;
+
+    color: inherit;
+    font-weight: 600;
+}
+.buttonBorder{
+    margin-top: 1em;
+    border: var(--text-color) 3px solid;
+    border-radius: 10px;
+    padding: .7em 1em;
+
+    font-weight: 100;
+}
+
+.textSeparator{
+    width: 8em;
+    height: 5px;
+
+    margin-bottom: 4em;
+    background: var(--shadow-light);
+}
+
+@media screen and (min-width: 900px) {
+    h1{
+        font-size: 3em;
+    }
+    .SpanHeader{
+        margin-bottom: 1em;
+
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .SpanHeader span{
+        font-size: 1.7em;
+        font-weight: 900;
+    }
 }

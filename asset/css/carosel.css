@@ -1,0 +1,102 @@
+.carosel{
+    --arrow-width: 2em;
+
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: auto 1fr auto;
+
+    /* height: 450px; */
+    padding: 0 1em;
+
+    text-align: center;
+}
+
+/* back and for buttons */
+
+.carosel__backArrow{grid-area: 1/1/2/2;}
+.carosel__forwardArrow{grid-area: 1/3/2/4;}
+
+.carosel > button{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+.carosel > button span{
+    font-size: var(--arrow-width);
+}
+
+/* slider */
+
+.carosel__slider{
+    grid-area: 1/2/2/3;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+    z-index: -1;
+}
+.carosel__slider .textField{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    position: relative;
+    
+    height: 100%;
+    width: 100%;
+}
+
+.carosel__slider img {
+    display: none;
+    
+    position: relative;
+    z-index: -1;
+    
+    height: 100%;
+}
+
+/* nav */
+
+.carosel__nav{
+    grid-area: 2/1/3/4;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 100%;
+}
+.carosel__nav button {
+    margin: 1em;
+    padding: .5em;
+    border-radius: 50%;
+    border: var(--text-color) 1.5px solid;
+    
+    position: relative;
+    z-index: 5;
+}
+.carosel__highlightButton{
+    background: var(--text-color);
+}
+
+/* computer */
+@media screen and (min-width: 650px) {
+    .carosel{
+        --text-color: var(--color-lightest);
+        --arrow-width: var(--computer-padding);
+
+        height: auto;
+        padding: 0;
+
+        color: var(--text-color);
+    }
+
+    .carosel__slider{grid-area: 1/1/3/4;}
+    .carosel__slider .textField{position: absolute;}
+    .carosel__slide1 .textField{padding: 0 50% 0 var(--arrow-width);}
+    .carosel__slide2 .textField{padding: 0 20%;}
+    .carosel__slide3 .textField{padding: 0 20%;}
+    .carosel__slider img {display: block;}
+}
