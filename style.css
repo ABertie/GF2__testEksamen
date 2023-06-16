@@ -1,6 +1,7 @@
 @import url("./asset/css/carosel.css");
 @import url("./asset/css/about.css");
 @import url("./asset/css/footer.css");
+@import url("./asset/css/header.css");
 
 :root{
     --color-dark: #3B4C5C;
@@ -22,6 +23,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5em;
 }
 
 body{

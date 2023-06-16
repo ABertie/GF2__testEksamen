@@ -33,15 +33,15 @@
     <header>
         <img src="./asset/img/Logo.png" alt="Event Centrum logo" class="logo">
         <nav>
-            <li>Forside</li>
-            <li>Fester</li>
-            <li>Firma events</li>
-            <li>Kontakt</li>
+            <li class="header__highlightButton"><a href="#forside">Forside</a></li>
+            <li><a href="#fester">Fester</a></li>
+            <li><a href="#firmaEvents">Firma events</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
         </nav>
     </header>
 
     <main>
-        <section class="carosel">
+        <section class="carosel" id="forside">
             <button class="carosel__backArrow noHover">
                 <span class="material-symbols-outlined">arrow_back_ios_new</span>
             </button>
@@ -86,7 +86,8 @@
             </article>
         </section>
 
-        <section class="events">
+        <!-- mangler styling til min card osv men de blev ned prioteret da jeg godt ved hvordan man gør men ete med ikke at have mere tid -->
+        <section class="events" id="fester">
             <h1>Andre events</h1>
             <p>Enhver virksomhed er en unik sammensætning af mennesker, ressourcer og udfordringer. Vi afholder gerne et
                 indledende og uforpligtende møde, så vi kan imødekomme jeres behov bedst muligt.</p>
@@ -130,7 +131,7 @@
             </div>
         </section>
 
-        <section class="prices">
+        <section class="prices" id="firmaEvents">
             <h1>Firma-events</h1>
             <p>Enhver virksomhed er en unik sammensætning af mennesker, ressourcer og udfordringer.</p>
             <p>Vi tilbyder en række event-pakker som imødekommer de flestes behov.</p>
@@ -165,7 +166,7 @@
 
     </main>
 
-    <footer>
+    <footer id="kontakt">
         <article class="contact">
             <h1>Kontakt os</h1>
             <p>Vi stræber efter at vores kunder kommer til at opleve glæde og motivation ved hjælpaf ekstraordinære
