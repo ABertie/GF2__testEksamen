@@ -11,7 +11,7 @@ CAROSEL_SLIDER.innerHTML = (SLIDE[index])
 
 SLIDE.forEach(function () {
     const CREATESPOT = document.createElement("button")
-    CREATESPOT.classList.add('carosel__spot')
+    CREATESPOT.classList.add('carosel__spot','noHover')
     SPOTS.appendChild(CREATESPOT)
 })
 const BUTTONS = SPOTS.querySelectorAll("button")

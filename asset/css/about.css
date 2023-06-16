@@ -17,12 +17,17 @@
 }
 
 .about__container{
+    --text-color: var(--color-grey);
+
     grid-area: 1/2/2/3;
+
+    color: var(--text-color);
 }
 
 .about__card{
     display: grid;
     grid-template-columns: auto 1fr;
+    grid-row: auto auto;
     column-gap: 1em;
     
     padding: 1em 0;
@@ -30,8 +35,9 @@
 
 .about__card span {
     --bg-color: var(--color-light);
+    --text-color: var(--color-dark);
     
-    grid-area: 1/1/2/2;
+    grid-area: 1/1/3/2;
     
     display: flex;
     align-self: center;
@@ -45,17 +51,22 @@
     border-radius: 50%;
     
     font-size: 2em;
-}
-
-.about__card .text{
-    --text-color: var(--color-grey);
-    grid-area: 1/2/2/3;
-    
     color: var(--text-color);
 }
 
+.about__card p{
+    grid-area: 2/2/3/3;
+
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
 .about__card h1 {
-    margin-bottom: .1em;
+    grid-area: 1/2/2/3;
+
+    margin-bottom: .5em;
+    font-size: 1em;
+    font-weight: 400;
 }
 
 @media screen and (min-width: 700px) {
@@ -80,6 +91,10 @@
 
     .about__card h1 {
         font-size: 1.3em;
+    }
+
+    .about__card p {
+        font-size: 1em;
     }
 
     .about__card span{

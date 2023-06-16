@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,21 +11,25 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- Script -->
     <script src="header.js" defer></script>
     <script src="carosel.js" defer></script>
     <script src="form.js" defer></script>
 </head>
+
 <body>
-    
+
     <header>
         <img src="./asset/img/Logo.png" alt="Event Centrum logo" class="logo">
         <nav>
@@ -37,11 +42,11 @@
 
     <main>
         <section class="carosel">
-            <button class="carosel__backArrow">
+            <button class="carosel__backArrow noHover">
                 <span class="material-symbols-outlined">arrow_back_ios_new</span>
             </button>
             <section class="carosel__slider animate__animated"></section>
-            <button class="carosel__forwardArrow">
+            <button class="carosel__forwardArrow noHover">
                 <span class="material-symbols-outlined">arrow_forward_ios</span>
             </button>
             <nav class="carosel__nav"></nav>
@@ -58,24 +63,18 @@
             <article class="about__container">
                 <section class="about__card">
                     <span><i class="fa-solid fa-check"></i></span>
-                    <div class="text">
-                        <h1>Tilrettelagt</h1>
-                        <p>Event Centrum planlægger, koordinerer og afvikler begivenheder i alle størrelser</p>
-                    </div>
+                    <h1>Tilrettelagt</h1>
+                    <p>Event Centrum planlægger, koordinerer og afvikler begivenheder i alle størrelser</p>
                 </section>
                 <section class="about__card">
                     <span><i class="fa-solid fa-trophy"></i></span>
-                    <div class="text">
-                        <h1>Professionelt</h1>
-                        <p>Event Centrum samarbejder udelukkende med professionelle leverandører</p>
-                    </div>
+                    <h1>Professionelt</h1>
+                    <p>Event Centrum samarbejder udelukkende med professionelle leverandører</p>
                 </section>
                 <section class="about__card">
                     <span><i class="fa-solid fa-shuffle"></i></span>
-                    <div class="text">
-                        <h1>Flexibelt</h1>
-                        <p>Konference for 100 personer eller teambuilding for 12? Vi en løsning, der gør jeres arrangement til en succes.</p>
-                    </div>
+                    <h1>Flexibelt</h1>
+                    <p>Konference for 100 personer eller teambuilding for 12? Vi en løsning, der gør jeres arrangement til en succes.</p>
                 </section>
                 <section class="about__card">
                     <span><i class="fa-solid fa-gauge-high"></i></span>
@@ -89,7 +88,8 @@
 
         <section class="events">
             <h1>Andre events</h1>
-            <p>Enhver virksomhed er en unik sammensætning af mennesker, ressourcer og udfordringer. Vi afholder gerne et indledende og uforpligtende møde, så vi kan imødekomme jeres behov bedst muligt.</p>
+            <p>Enhver virksomhed er en unik sammensætning af mennesker, ressourcer og udfordringer. Vi afholder gerne et
+                indledende og uforpligtende møde, så vi kan imødekomme jeres behov bedst muligt.</p>
             <div class="container">
                 <article class="container__card">
                     <img src="./asset/img/COLOURBOX1126435.jpg" alt="Et møde">
@@ -162,13 +162,14 @@
             </article>
             <img src="./asset/img/low-poly-grid-haikei.svg" alt="background">
         </section>
-        
+
     </main>
 
     <footer>
         <article class="contact">
             <h1>Kontakt os</h1>
-            <p>Vi stræber efter at vores kunder kommer til at opleve glæde og motivation ved hjælpaf ekstraordinære oplevelser. For en uforpligtende samtale om mulighederne i jeres arrangement.</p>
+            <p>Vi stræber efter at vores kunder kommer til at opleve glæde og motivation ved hjælpaf ekstraordinære
+                oplevelser. For en uforpligtende samtale om mulighederne i jeres arrangement.</p>
             <section class="contact__card">
                 <span><i class="fa-solid fa-location-dot"></i></span>
                 <h1>Adresse</h1>
@@ -185,14 +186,18 @@
                 <p>email@event-centrum.dk</p>
             </section>
         </article>
-        <form action="index.html">
+        <form action="./index.html" id="footerForm" novalidate>
             <h1>Send os et par linjer</h1>
-            <input type="text">
-            <input type="email">
-            <input type="text">
-            <button>Send</button>
+            <input type="text" placeholder="Skriv dit navn her">
+            <span class="submitForm__massage"></span>
+            <input type="email" placeholder="Skriv din email her">
+            <span class="submitForm__massage"></span>
+            <textarea type="text" placeholder="Skriv din besked her"></textarea>
+            <span class="submitForm__massage"></span>
+            <button type="submit"><span><i class="fa-solid fa-envelope"></i></span> Send</button>
         </form>
     </footer>
 
 </body>
+
 </html>
