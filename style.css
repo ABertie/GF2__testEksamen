@@ -1,9 +1,11 @@
 @import url("./asset/css/carosel.css");
+@import url("./asset/css/about.css");
 
 :root{
     --color-dark: #3B4C5C;
     --color-darker: #2A343F;
     --color-darkest: #262F38;
+    --color-grey: #8492a0;
     --color-lightest: #FEFEFE;
     --color-lighter: #F3F4F6;
     --color-light: #D7DBDE; 
@@ -27,6 +29,7 @@ body{
 
     color: var(--text-color);
     font-family: 'Open Sans', sans-serif;
+    text-align: center;
 }
 
 img{
@@ -41,16 +44,13 @@ h1{
 
     margin-bottom: 1.5rem;
 }
-.SpanHeader{
-    display: flex;
-    flex-direction: column;
-}
 
 p, button{
-    font-size: 1.3em;
+    font-size: .8em;
+    font-weight: 500;
 }
+
 p+p{
-    font-size: 1em;
     margin-top: 1em;
 }
 
@@ -75,7 +75,7 @@ button{
     width: 8em;
     height: 5px;
 
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     background: var(--shadow-light);
 }
 
@@ -83,14 +83,13 @@ button{
     h1{
         font-size: 3em;
     }
-    .SpanHeader{
-        margin-bottom: 1em;
 
-        font-size: 2em;
-        font-weight: 400;
+    p, button{
+        font-size: 1em;
+        font-weight: 100;
     }
-    .SpanHeader span{
-        font-size: 1.7em;
-        font-weight: 900;
+
+    .textSeparator{
+        margin-bottom: 4em;
     }
 }

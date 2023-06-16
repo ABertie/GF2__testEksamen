@@ -5,7 +5,7 @@
     grid-template-rows: 1fr auto;
     grid-template-columns: auto 1fr auto;
 
-    /* height: 450px; */
+    min-height: 415px;
     padding: 0 1em;
 
     text-align: center;
@@ -36,7 +36,7 @@
     position: relative;
     z-index: -1;
 }
-.carosel__slider .textField{
+.carosel__slider .text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -94,9 +94,33 @@
     }
 
     .carosel__slider{grid-area: 1/1/3/4;}
-    .carosel__slider .textField{position: absolute;}
-    .carosel__slide1 .textField{padding: 0 50% 0 var(--arrow-width);}
-    .carosel__slide2 .textField{padding: 0 20%;}
-    .carosel__slide3 .textField{padding: 0 20%;}
+    .carosel__slider .text{position: absolute;}
+    .carosel__slide1 .text{padding: 0 50% 0 var(--arrow-width);}
+    .carosel__slide2 .text{padding: 0 20%;}
+    .carosel__slide3 .text{padding: 0 20%;}
     .carosel__slider img {display: block;}
+    .carosel__slider p+p{
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    .SpanHeader{
+        display: flex;
+        flex-direction: column;
+        
+        margin-bottom: 1em;
+
+        font-size: 2em;
+        font-weight: 400;
+    }
+    .SpanHeader span{
+        font-size: 1.7em;
+        font-weight: 900;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    p, button{
+        font-size: 1.3em;
+    }
 }
